@@ -1,0 +1,1 @@
+include ':app', ':accounts', ':catalog', ':staff', ':student', ':catalogupdate'

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="28"
+    android:orientation="vertical">
+
+    <!--Library settings slide view frame-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#6789"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:layout_marginLeft="@dimen/minHorizontalMargin"
+        android:layout_marginRight="@dimen/minHorizontalMargin"
+        android:layout_weight="19">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="17"
+            android:showDividers="end"
+            android:divider="2dp"
+            android:orientation="vertical"
+            >
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/maxHorizontalMargin"
+            android:background="#fff"
+            android:hint="Name or title"
+            android:textColorHint="#000"
+            android:layoutMode="clipBounds"
+            >
+        </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/maxHorizontalMargin"
+                android:background="#fff"
+                android:baselineAligned="false"
+                android:hint="Name or title"
+                android:layoutMode="clipBounds"
+                android:textColorHint="#000">
+            </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/maxHorizontalMargin"
+            android:background="#fff"
+            android:hint="Name or title"
+            android:textColorHint="#000"
+            android:layoutMode="clipBounds"
+            >
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/maxHorizontalMargin"
+            android:background="#fff"
+            android:hint="Name or title"
+            android:textColorHint="#000"
+            android:layoutMode="clipBounds"
+            >
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/maxHorizontalMargin"
+            android:background="#fff"
+            android:hint="Name or title"
+            android:textColorHint="#000"
+            android:layoutMode="clipBounds"
+            >
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/maxHorizontalMargin"
+            android:background="#fff"
+            android:hint="Name or title"
+            android:textColorHint="#000"
+            android:layoutMode="clipBounds"
+            >
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/maxHorizontalMargin"
+            android:background="#fff"
+            android:hint="Name or title"
+            android:textColorHint="#000"
+            android:layoutMode="clipBounds"
+            >
+        </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/minHorizontalMargin"
+                android:background="@drawable/button_style1"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/minHorizontalMargin"
+                android:background="@drawable/button_style1"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

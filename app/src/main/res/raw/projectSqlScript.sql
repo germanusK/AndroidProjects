@@ -6,6 +6,7 @@
     location varchar(100) not null,
     libraryId int(10) not null unique,
     type varchar(45),
+    picture varchar(255),
     primary key(libraryId)
   );
   create table admin(
@@ -18,6 +19,7 @@
     adminId int(10) not null unique,
     username varchar(45) not null,
     password varchar(32),
+    picture varchar(255),
     libraryId int(10) not null unique,
     primary key(adminId),
     foreign key(libraryId) references library on delete cascade
@@ -32,6 +34,7 @@
     managerId int(10) not null unique,
     username varchar(45) not null,
     password varchar(32),
+    picture varchar(255),
     libraryId int(10) not null unique,
     primary key(managerId),
     foreign key(libraryId) references library on delete cascade
@@ -46,6 +49,7 @@
     homeAddress varchar(100) not null,
     username varchar(45) not null,
     password varchar(32),
+    picture varchar(255),
     libraryId int(10) not null unique,
     primary key(staffId),
     foreign key(libraryId) references library on delete cascade
@@ -60,6 +64,7 @@
     password varchar(32) not null,
     studentId int(10) not null unique,
     managerId int(10),
+    picture varchar(255),
     primary key(studentId),
     foreign key(managerId) references manager
   );
@@ -76,6 +81,7 @@
    shelfId int(10) not null unique,
    managerId int(10),
    libraryId int(10),
+   picture varchar(255),
    primary key(shelfId),
    foreign key(managerId) references manager,
    foreign key(libraryId) references library
@@ -108,6 +114,7 @@
    itemId int(10),
    shelfId int(10),
    cellNumber int,
+   picture varchar(255),
    libraryId int(10),
    primary key(itemId),
    foreign key(shelfId, cellNumber) references cell,

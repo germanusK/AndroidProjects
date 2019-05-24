@@ -12,7 +12,7 @@ import java.io.InputStream;
 
 public class Database extends SQLiteOpenHelper {
 
-    DatabaseEnd dbEnd = new DatabaseEnd();
+    API dbEnd = new API();
     InputStream inputStream = null;
     byte[] script = null;
 

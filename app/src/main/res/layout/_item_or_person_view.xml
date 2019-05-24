@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="57"
+    android:orientation="vertical"
+    >
+
+    <!--App bar frame-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        android:layout_weight="12"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <!--Library settings slide view frame-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/horizontal_equiradius"
+        android:layout_marginLeft="@dimen/maxHorizontalMargin"
+        android:layout_weight="16"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!--Third section of the layout-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/horizontal_equiradius"
+        android:layout_weight="26"
+        android:layout_marginLeft="@dimen/maxHorizontalMargin"
+        >
+    </FrameLayout>
+
+</LinearLayout>

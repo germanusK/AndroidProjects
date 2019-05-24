@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="28"
+    android:orientation="vertical"
+    >
+
+    <!--App bar frame-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        android:layout_weight="6"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <!--Library settings slide view frame-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/horizontal_equiradius"
+        android:layout_marginLeft="@dimen/minHorizontalMargin"
+        android:layout_marginRight="@dimen/minHorizontalMargin"
+        android:layout_weight="10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!--Third section of the layout-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@mipmap/ic_launcher"
+        android:layout_weight="10"
+        android:layout_marginRight="@dimen/minHorizontalMargin"
+        android:layout_marginLeft="@dimen/minHorizontalMargin"
+        >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="7">
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                />
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:background="@drawable/horizontal_equiradius"
+                />
+        </TableRow>
+    </FrameLayout>
+
+</LinearLayout>
